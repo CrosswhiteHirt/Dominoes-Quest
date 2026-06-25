@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dominoes Quest</title>
+  <meta name="description" content="Dominoes Quest is a polished single-player domino puzzle game with 50 handcrafted-feeling generated levels, star progress, and strategic tile matching.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #062015;
+      --panel: #0e3424;
+      --text: #fff7df;
+      --muted: #c8d8c8;
+      --gold: #e0ad49;
+      --line: rgba(255, 247, 223, 0.16);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #0d6b3d 0, #062015 58%, #020806 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--gold);
+    }
+
+    .hero {
+      min-height: 86vh;
+      display: grid;
+      align-items: center;
+      padding: 64px 24px 48px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-inner,
+    .section-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(280px, 0.75fr);
+      gap: 48px;
+      align-items: center;
+    }
+
+    .app-icon {
+      width: 132px;
+      height: 132px;
+      border-radius: 28px;
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.38);
+      display: block;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(48px, 8vw, 92px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: clamp(30px, 4vw, 48px);
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 680px;
+      margin: 24px 0 0;
+      color: var(--muted);
+      font-size: clamp(18px, 2.1vw, 24px);
+    }
+
+    .hero-shot {
+      width: min(360px, 100%);
+      margin: 0 auto;
+      display: block;
+      border-radius: 32px;
+      box-shadow: 0 34px 90px rgba(0, 0, 0, 0.42);
+    }
+
+    section {
+      padding: 72px 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .feature {
+      background: rgba(14, 52, 36, 0.76);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .feature p,
+    .copy p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 28px;
+      align-items: start;
+    }
+
+    .screenshots img {
+      width: 100%;
+      display: block;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.26);
+    }
+
+    .store-copy {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .copy {
+      background: rgba(14, 52, 36, 0.58);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .keywords {
+      margin: 12px 0 0;
+      color: var(--muted);
+      word-break: break-word;
+    }
+
+    footer {
+      padding: 32px 24px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    @media (max-width: 820px) {
+      .hero-grid,
+      .store-copy {
+        grid-template-columns: 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .screenshots {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <div class="hero-inner hero-grid">
+        <div>
+          <img class="app-icon" src="Marketing/images/app-icon.jpg" alt="Dominoes Quest app icon" width="512" height="512">
+          <h1>Dominoes Quest</h1>
+          <p class="lead">Match tiles, control the open ends, and outplay the AI across 50 progressively harder single-player domino levels.</p>
+        </div>
+        <img class="hero-shot" src="Marketing/images/iphone-match-and-score.jpg" alt="Dominoes Quest gameplay on iPhone" width="560" height="1212">
+      </div>
+    </header>
+
+    <section>
+      <div class="section-inner">
+        <h2>A Classic Tile Game With Puzzle Progression</h2>
+        <div class="features">
+          <article class="feature">
+            <h3>50 Levels</h3>
+            <p>Play a steady ladder of generated challenges where the hand size, AI pressure, and match options evolve over time.</p>
+          </article>
+          <article class="feature">
+            <h3>Smart Domino Play</h3>
+            <p>Match either open end, draw when blocked, manage your hand, and watch the AI respond to the board state.</p>
+          </article>
+          <article class="feature">
+            <h3>Stars And Progress</h3>
+            <p>Earn stars, unlock later levels, and return to improve your results whenever you want a sharper run.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner">
+        <h2>Screenshots</h2>
+        <div class="screenshots">
+          <img src="Marketing/images/iphone-advanced-play.jpg" alt="Advanced iPhone domino level" width="560" height="1212">
+          <img src="Marketing/images/iphone-match-and-score.jpg" alt="Matching domino tiles on iPhone" width="560" height="1212">
+          <img src="Marketing/images/iphone-domino-strategy.jpg" alt="Strategic domino hand on iPhone" width="560" height="1212">
+          <img src="Marketing/images/ipad-main-menu.jpg" alt="Dominoes Quest main menu on iPad" width="760" height="1013">
+          <img src="Marketing/images/ipad-gameplay.jpg" alt="Dominoes Quest gameplay on iPad" width="760" height="1013">
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-inner store-copy">
+        <div class="copy">
+          <h2>App Store Description</h2>
+          <p>Dominoes Quest is a relaxing single-player domino puzzle game built for quick sessions and satisfying strategy. Place tiles by matching the open ends, draw when you need a better option, and try to clear your hand before the AI does.</p>
+          <p>Explore 50 progressively harder levels, collect stars, and improve your score as each board asks for smarter tile choices. With smooth touch controls, warm table visuals, and classic domino rules, Dominoes Quest is easy to start and rewarding to master.</p>
+        </div>
+        <div class="copy">
+          <h2>Keywords</h2>
+          <p class="keywords">dominoes,domino,puzzle,tiles,board game,classic game,casual,strategy,offline,single player,logic,brain,match,stars,levels</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: <a href="mailto:508923216@qq.com">508923216@qq.com</a> · <a href="privacy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>
